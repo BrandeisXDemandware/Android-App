@@ -51,7 +51,7 @@ public class MyApplication extends Application {
         });
     }
 
-    // hepler function
+    // helper function
     public void showNotification(String title, String message) {
         Intent notifyIntent = new Intent(this, MainActivity.class);
         notifyIntent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);

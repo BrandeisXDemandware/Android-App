@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // beacon test
+        // this can be the one in MyApplication
         beaconManager = new BeaconManager(this);
 
         region = new Region("ranged region",
