@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.estimote.sdk.Beacon;
 import com.estimote.sdk.BeaconManager;
@@ -38,10 +40,23 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Call Shopper!", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
+
+        final ListView listview = (ListView) findViewById(R.id.itemListView);
+        String[] values = new String[] { "Android", "iPhone", "WindowsMobile",
+                "Blackberry", "WebOS", "Ubuntu", "Windows7", "Max OS X",
+                "Linux", "OS/2"};
+
+        final ArrayList<String> list = new ArrayList<>();
+        for (int i = 0; i < values.length; ++i) {
+            list.add(values[i]);
+        }
+        final ArrayAdapter adapter = new ArrayAdapter(this,
+                android.R.layout.simple_list_item_1, list);
+        listview.setAdapter(adapter);
 
 
         // beacon test
@@ -49,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         beaconManager = new BeaconManager(this);
 
         region = new Region("ranged region",
-                UUID.fromString("B9407F30-F5F8-466E-AFF9-25556B57FE6D"), null, null);
+                UUID.fromString(getString(R.string.beacon_UUID)), null, null);
 
         beaconManager.setRangingListener(new BeaconManager.RangingListener() {
             @Override
@@ -134,6 +149,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return Collections.emptyList();
     }
+
 
 
 }

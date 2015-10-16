@@ -6,6 +6,9 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 
 import com.estimote.sdk.Beacon;
 import com.estimote.sdk.BeaconManager;
@@ -28,10 +31,8 @@ public class MyApplication extends Application {
             @Override
             public void onEnteredRegion(Region region, List<Beacon> list) {
                 showNotification(
-                        "Your gate closes in 47 minutes.",
-                        "Current security wait time is 15 minutes, "
-                                + "and it's a 5 minute walk from security to the gate. "
-                                + "Looks like you've got plenty of time!");
+                        "Welcome To DW SHOP!",
+                        "Current on sale items are: ...");
             }
             @Override
             public void onExitedRegion(Region region) {
@@ -45,8 +46,8 @@ public class MyApplication extends Application {
             public void onServiceReady() {
                 beaconManager.startMonitoring(new Region(
                         "monitored region",
-                        UUID.fromString("B9407F30-F5F8-466E-AFF9-25556B57FE6D"),
-                        22504, 48827));
+                        UUID.fromString(getResources().getString(R.string.beacon_UUID)),
+                        getResources().getInteger(R.integer.beacon_2_major), getResources().getInteger(R.integer.beacon_2_minor)));
             }
         });
     }
@@ -57,8 +58,13 @@ public class MyApplication extends Application {
         notifyIntent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivities(this, 0,
                 new Intent[] { notifyIntent }, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        Drawable myDrawable = getResources().getDrawable(R.drawable.dw);
+        Bitmap anImage      = ((BitmapDrawable) myDrawable).getBitmap();
+
         Notification notification = new Notification.Builder(this)
-                .setSmallIcon(android.R.drawable.ic_dialog_info)
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setLargeIcon(anImage)
                 .setContentTitle(title)
                 .setContentText(message)
                 .setAutoCancel(true)
