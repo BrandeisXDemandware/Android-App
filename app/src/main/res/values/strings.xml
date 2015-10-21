@@ -5,6 +5,7 @@
     <string name="welcome_text">Welcome to this dev</string>
     <string name="register">Register Here</string>
     <string name="login">Login Here</string>
+    <string name="title_activity_home">Backend Entrance</string>
     <string name="title_activity_welcome">Welcome</string>
     <string name="user_email">Email Here</string>
     <string name="user_password">Password Here</string>
@@ -13,4 +14,5 @@
     <string name="user_password_confirmation">Password Confirm</string>
     <string name="register_disclaimer">Register Disclaimer</string>
     <string name="title_activity_register">Please Register</string>
+    <string name = "beacon_UUID">B9407F30-F5F8-466E-AFF9-25556B57FE6D</string>
 </resources>

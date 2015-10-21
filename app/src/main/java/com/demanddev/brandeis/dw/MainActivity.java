@@ -1,64 +1,109 @@
 package com.demanddev.brandeis.dw;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.widget.Toast;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.estimote.sdk.Beacon;
 import com.estimote.sdk.BeaconManager;
 import com.estimote.sdk.Region;
 
-import org.apache.http.client.HttpResponseException;
-import org.apache.http.client.ResponseHandler;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.BasicResponseHandler;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
-
-/**
- * Created by jingzou on 10/12/15.
- */
 public class MainActivity extends AppCompatActivity {
-    private final static String LOGIN_API_ENDPOINT_URL = "https://devweb.herokuapp.com/api/v1/sessions.json";
-    private SharedPreferences mPreferences;
-    private String mUserEmail;
-    private String mUserPassword;
 
     private BeaconManager beaconManager;
     private Region region;
-    private String beaconID;
+    private String item = "not found";
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        mPreferences = getSharedPreferences("CurrentUser", MODE_PRIVATE);
+        // initial setup
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Talk to a shopping assistant!", Snackbar.LENGTH_LONG )
+                        .setAction("Action", null).show();
+            }
+        });
 
+        final ListView listview = (ListView) findViewById(R.id.itemListView);
+        String[] values = new String[] { "Adidas", "Nike", "Cross",
+                "Thom Browne", "Acne", "Apolis", "Mission Workshop", "Etsy",
+                "Opening Ceremony", "Red Wing"};
+
+        final ArrayList<String> list = new ArrayList<>();
+        Collections.addAll(list, values);
+        final ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, list);
+        listview.setAdapter(adapter);
+
+
+        // beacon test
+        // this can be the one in MyApplication
         beaconManager = new BeaconManager(this);
 
         region = new Region("ranged region",
-                UUID.fromString("B9407F30-F5F8-466E-AFF9-25556B57FE6D"), null, null);
+                UUID.fromString(getString(R.string.beacon_UUID)), null, null);
 
         beaconManager.setRangingListener(new BeaconManager.RangingListener() {
             @Override
             public void onBeaconsDiscovered(Region region, List<Beacon> list) {
                 if (!list.isEmpty()) {
                     Beacon nearestBeacon = list.get(0);
-                    beaconID = String.format("B9407F30-F5F8-466E-AFF9-25556B57FE6D:%d:%d", nearestBeacon.getMajor(), nearestBeacon.getMinor());
+                    List<String> places = placesNearBeacon(nearestBeacon);
+                    if (places.size()!=0 && !item.equals(places.get(0))) {
+                        item = places.get(0);
+                        Snackbar.make(findViewById(R.id.fab), "Recommend " + item + " !", Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
+                    }
+                    Log.d("Category", "Nearest places: " + places);
                 }
             }
         });
+
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            startActivity(new Intent(this, com.demanddev.brandeis.dw.HomeActivity.class));
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -70,9 +115,6 @@ public class MainActivity extends AppCompatActivity {
                 beaconManager.startRanging(region);
             }
         });
-        LoginTask loginTask = new LoginTask(MainActivity.this);
-        loginTask.setMessageLoading("Logging in...");
-        loginTask.execute(LOGIN_API_ENDPOINT_URL);
     }
 
     @Override
@@ -81,85 +123,38 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
     }
 
-    private class LoginTask extends com.demanddev.brandeis.dw.UrlJsonAsyncTask {
-        public LoginTask(Context context) {
-            super(context);
-        }
 
-        @Override
-        protected JSONObject doInBackground(String... urls) {
-            DefaultHttpClient client = new DefaultHttpClient();
-            HttpPost post = new HttpPost(urls[0]);
-            JSONObject holder = new JSONObject();
-            JSONObject userObj = new JSONObject();
-            String response = null;
-            JSONObject json = new JSONObject();
-
-            try {
-                try {
-                    // setup the returned values in case
-                    // something goes wrong
-                    json.put("success", false);
-                    json.put("info", "Something went wrong. Retry!");
-                    // add the user email and password to
-                    // the params
-                    userObj.put("beacon_id", beaconID);
-                    userObj.put("email", "beacontest4@example.com");
-                    userObj.put("password", "secret12345");
-                    holder.put("user", userObj);
-                    StringEntity se = new StringEntity(holder.toString());
-                    post.setEntity(se);
-
-                    // setup the request headers
-                    post.setHeader("Accept", "application/json");
-                    post.setHeader("Content-Type", "application/json");
-
-                    ResponseHandler<String> responseHandler = new BasicResponseHandler();
-                    response = client.execute(post, responseHandler);
-                    json = new JSONObject(response);
-
-                } catch (HttpResponseException e) {
-                    e.printStackTrace();
-                    Log.e("ClientProtocol", "" + e);
-                    json.put("info", "Email and/or password are invalid. Retry!");
-                } catch (IOException e) {
-                    e.printStackTrace();
-                    Log.e("IO", "" + e);
-                }
-            } catch (JSONException e) {
-                e.printStackTrace();
-                Log.e("JSON", "" + e);
-            }
-
-            return json;
-        }
-
-        @Override
-        protected void onPostExecute(JSONObject json) {
-            try {
-                if (json.getBoolean("success")) {
-                    // everything is ok
-                    SharedPreferences.Editor editor = mPreferences.edit();
-                    // save the returned auth_token into
-                    // the SharedPreferences
-                    editor.putString("AuthToken", json.getJSONObject("data").getString("auth_token"));
-                    editor.putString("User", json.getJSONObject("data").getString("user"));
-                    editor.putString("Beacon", json.getJSONObject("data").getString("beacon"));
-                    editor.commit();
-
-                    // launch the HomeActivity and close this one
-                    Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-                    startActivity(intent);
-                    finish();
-                }
-                Toast.makeText(context, json.getString("info"), Toast.LENGTH_LONG).show();
-            } catch (Exception e) {
-                // something went wrong: show a Toast
-                // with the exception message
-                Toast.makeText(context, e.getMessage(), Toast.LENGTH_LONG).show();
-            } finally {
-                super.onPostExecute(json);
-            }
-        }
+    // We have a list of target
+    private static final Map<String, List<String>> PLACES_BY_BEACONS;
+    static {
+        Map<String, List<String>> placesByBeacons = new HashMap<>();
+        placesByBeacons.put("37580:52915", new ArrayList<String>() {{
+            add("Shoe");
+            add("Dress");
+            add("Jeans");
+        }});
+        placesByBeacons.put("30230:63712", new ArrayList<String>() {{
+            add("Fruit");
+            add("Snack");
+            add("Milk");
+        }});
+        placesByBeacons.put("10053:63975", new ArrayList<String>() {{
+            add("Phone");
+            add("Laptop");
+            add("Tablet");
+        }});
+        PLACES_BY_BEACONS = Collections.unmodifiableMap(placesByBeacons);
     }
+
+    // get the category name
+    private List<String> placesNearBeacon(Beacon beacon) {
+        String beaconKey = String.format("%d:%d", beacon.getMajor(), beacon.getMinor());
+        if (PLACES_BY_BEACONS.containsKey(beaconKey)) {
+            return PLACES_BY_BEACONS.get(beaconKey);
+        }
+        return Collections.emptyList();
+    }
+
+
+
 }

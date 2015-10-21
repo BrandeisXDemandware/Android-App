@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name = "beacon_1_major">30230</integer>
+    <integer name = "beacon_1_minor">63712</integer>
+    <integer name = "beacon_2_major">37580</integer>
+    <integer name = "beacon_2_minor">52915</integer>
+    <integer name = "beacon_3_major">10053</integer>
+    <integer name = "beacon_3_minor">63975</integer>
+</resources>
