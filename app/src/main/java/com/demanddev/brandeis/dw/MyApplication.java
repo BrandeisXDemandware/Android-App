@@ -20,7 +20,7 @@ import java.util.UUID;
 
 public class MyApplication extends Application {
 
-    private BeaconManager beaconManager;
+    protected static BeaconManager beaconManager;
     private long start;
     private long elapsedTime;
 

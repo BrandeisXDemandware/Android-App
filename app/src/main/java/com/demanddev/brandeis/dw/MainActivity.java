@@ -42,14 +42,14 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Talk to a shopping assistant!", Snackbar.LENGTH_LONG )
+                Snackbar.make(view, "Shopping assistant will be with you shortly!", Snackbar.LENGTH_LONG )
                         .setAction("Action", null).show();
             }
         });
 
         final ListView listview = (ListView) findViewById(R.id.itemListView);
         String[] values = new String[] { "Adidas", "Nike", "Cross",
-                "Thom Browne", "Acne", "Apolis", "Mission Workshop", "Etsy",
+                "Thom Browne", "Acne", "Phillip Lim 31", "Mission Workshop", "Etsy",
                 "Opening Ceremony", "Red Wing"};
 
         final ArrayList<String> list = new ArrayList<>();
