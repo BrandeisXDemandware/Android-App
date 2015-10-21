@@ -34,7 +34,7 @@ public class MyApplication extends Application {
             public void onEnteredRegion(Region region, List<Beacon> list) {
                 start = System.currentTimeMillis();
                 showNotification(
-                        "Welcome To DW SHOP!",
+                        "Welcome!",
                         "Current on sale items are: ...");
             }
             @Override

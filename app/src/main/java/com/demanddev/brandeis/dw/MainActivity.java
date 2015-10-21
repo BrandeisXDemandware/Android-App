@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Call Shopper!", Snackbar.LENGTH_LONG )
+                Snackbar.make(view, "Talk to a shopping assistant!", Snackbar.LENGTH_LONG )
                         .setAction("Action", null).show();
             }
         });
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                     List<String> places = placesNearBeacon(nearestBeacon);
                     if (places.size()!=0 && !item.equals(places.get(0))) {
                         item = places.get(0);
-                        Snackbar.make(findViewById(R.id.fab), "Get " + item + " !", Snackbar.LENGTH_LONG)
+                        Snackbar.make(findViewById(R.id.fab), "Recommend " + item + " !", Snackbar.LENGTH_LONG)
                                 .setAction("Action", null).show();
                     }
                     Log.d("Category", "Nearest places: " + places);
