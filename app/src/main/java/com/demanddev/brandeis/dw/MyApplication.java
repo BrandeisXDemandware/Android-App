@@ -20,6 +20,8 @@ import java.util.UUID;
 public class MyApplication extends Application {
 
     private BeaconManager beaconManager;
+    private long start;
+    private long elapsedTime;
 
     @Override
     public void onCreate() {
@@ -30,13 +32,17 @@ public class MyApplication extends Application {
         beaconManager.setMonitoringListener(new BeaconManager.MonitoringListener() {
             @Override
             public void onEnteredRegion(Region region, List<Beacon> list) {
+                start = System.currentTimeMillis();
                 showNotification(
                         "Welcome To DW SHOP!",
                         "Current on sale items are: ...");
             }
             @Override
             public void onExitedRegion(Region region) {
-                // could add an "exit" notification too if you want (-:
+                elapsedTime = System.currentTimeMillis()-start;
+                showNotification(
+                        "Thank you for coming!",
+                        "You shop "+elapsedTime/1000+" seconds!");
             }
         });
 
