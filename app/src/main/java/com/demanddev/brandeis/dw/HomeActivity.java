@@ -42,38 +42,19 @@ public class HomeActivity extends AppCompatActivity {
     private BeaconManager beaconManager;
     private Region region;
     private String oldBeaconID = " ";
+    private int time = 0;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         mPreferences = getSharedPreferences("CurrentUser", MODE_PRIVATE);
+        beaconManager = new BeaconManager(this);
 
-        if (!mPreferences.contains("AuthToken")) {
-            Intent intent = new Intent(HomeActivity.this, WelcomeActivity.class);
-            startActivityForResult(intent, 0);
-        }
-        else {
-            beaconManager = new BeaconManager(this);
 
-            region = new Region("ranged region",
-                    UUID.fromString("B9407F30-F5F8-466E-AFF9-25556B57FE6D"), null, null);
+        region = new Region("ranged region",
+                UUID.fromString("B9407F30-F5F8-466E-AFF9-25556B57FE6D"), null, null);
 
-            beaconManager.setRangingListener(new BeaconManager.RangingListener() {
-                @Override
-                public void onBeaconsDiscovered(Region region, List<Beacon> list) {
-                    if (!list.isEmpty()) {
-                        Beacon nearestBeacon = list.get(0);
-                        BeaconID = String.format("B9407F30-F5F8-466E-AFF9-25556B57FE6D:%d:%d", nearestBeacon.getMajor(), nearestBeacon.getMinor());
-                    }
-                    if (!BeaconID.equals(oldBeaconID)) {
-                        updateTasksFromAPI(LOGIN_API_ENDPOINT_URL, BeaconID);
-                        oldBeaconID = BeaconID;
-                    }
-                }
-            });
-            loadTasksFromAPI(TASKS_URL);
-        }
 
     }
 
@@ -111,7 +92,6 @@ public class HomeActivity extends AppCompatActivity {
                     json.put("info", "Something went wrong. Retry!");
                     // add the user email and password to
                     // the params
-                    System.out.println("@@@@@@@@@" + BeaconID);
                     userObj.put("beacon_id", BeaconID);
                     userObj.put("email", mPreferences.getString("User", "beacontest4@example.com"));
                     userObj.put("password", mPreferences.getString("Password", "secret12345"));
@@ -179,12 +159,7 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     public void onResume() {
         super.onResume();
-        beaconManager.connect(new BeaconManager.ServiceReadyCallback() {
-            @Override
-            public void onServiceReady() {
-                beaconManager.startRanging(region);
-            }
-        });
+
         /*
         if (mPreferences.contains("AuthToken")) {
             loadTasksFromAPI(TASKS_URL);
@@ -193,6 +168,50 @@ public class HomeActivity extends AppCompatActivity {
             startActivityForResult(intent, 0);
         }
         */
+
+        if (!mPreferences.contains("AuthToken")) {
+            Intent intent = new Intent(HomeActivity.this, WelcomeActivity.class);
+            startActivityForResult(intent, 0);
+        }
+        else {
+            loadTasksFromAPI(TASKS_URL);
+            oldBeaconID = mPreferences.getString("Beacon", "");
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            while (time < 10000) {
+                beaconManager.setRangingListener(new BeaconManager.RangingListener() {
+                    @Override
+                    public void onBeaconsDiscovered(Region region, List<Beacon> list) {
+                        if (!list.isEmpty()) {
+                            Beacon nearestBeacon = list.get(0);
+                            BeaconID = String.format("B9407F30-F5F8-466E-AFF9-25556B57FE6D:%d:%d", nearestBeacon.getMajor(), nearestBeacon.getMinor());
+                        }
+                        if (!BeaconID.equals(oldBeaconID)) {
+                            updateTasksFromAPI(LOGIN_API_ENDPOINT_URL, BeaconID);
+                            oldBeaconID = BeaconID;
+                            try {
+                                Thread.sleep(1000);
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+                            loadTasksFromAPI(TASKS_URL);
+                        }
+                    }
+                });
+                time++;
+            }
+        }
+
+        beaconManager.connect(new BeaconManager.ServiceReadyCallback() {
+            @Override
+            public void onServiceReady() {
+                beaconManager.startRanging(region);
+            }
+        });
     }
 
 
