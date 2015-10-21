@@ -6,6 +6,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.estimote.sdk.Beacon;
@@ -29,7 +31,7 @@ import java.util.UUID;
 /**
  * Created by jingzou on 10/12/15.
  */
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
     private final static String LOGIN_API_ENDPOINT_URL = "https://devweb.herokuapp.com/api/v1/sessions.json";
     private SharedPreferences mPreferences;
     private String mUserEmail;
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
 
         mPreferences = getSharedPreferences("CurrentUser", MODE_PRIVATE);
 
@@ -70,15 +73,30 @@ public class MainActivity extends AppCompatActivity {
                 beaconManager.startRanging(region);
             }
         });
-        LoginTask loginTask = new LoginTask(MainActivity.this);
-        loginTask.setMessageLoading("Logging in...");
-        loginTask.execute(LOGIN_API_ENDPOINT_URL);
     }
 
     @Override
     protected void onPause() {
         beaconManager.stopRanging(region);
         super.onPause();
+    }
+
+    public void login(View button) {
+        EditText userEmailField = (EditText) findViewById(R.id.userEmail);
+        mUserEmail = userEmailField.getText().toString();
+        EditText userPasswordField = (EditText) findViewById(R.id.userPassword);
+        mUserPassword = userPasswordField.getText().toString();
+
+        if (mUserEmail.length() == 0 || mUserPassword.length() == 0) {
+            // input fields are empty
+            Toast.makeText(this, "Please complete all the fields",
+                    Toast.LENGTH_LONG).show();
+            return;
+        } else {
+            LoginTask loginTask = new LoginTask(LoginActivity.this);
+            loginTask.setMessageLoading("Logging in...");
+            loginTask.execute(LOGIN_API_ENDPOINT_URL);
+        }
     }
 
     private class LoginTask extends com.demanddev.brandeis.dw.UrlJsonAsyncTask {
@@ -104,8 +122,8 @@ public class MainActivity extends AppCompatActivity {
                     // add the user email and password to
                     // the params
                     userObj.put("beacon_id", beaconID);
-                    userObj.put("email", "beacontest4@example.com");
-                    userObj.put("password", "secret12345");
+                    userObj.put("email", mUserEmail);
+                    userObj.put("password", mUserPassword);
                     holder.put("user", userObj);
                     StringEntity se = new StringEntity(holder.toString());
                     post.setEntity(se);

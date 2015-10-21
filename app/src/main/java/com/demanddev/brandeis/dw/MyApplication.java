@@ -22,8 +22,6 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         beaconManager = new BeaconManager(getApplicationContext());
-
-        // set callback/listener
         beaconManager.setMonitoringListener(new BeaconManager.MonitoringListener() {
             @Override
             public void onEnteredRegion(Region region, List<Beacon> list) {
@@ -38,25 +36,20 @@ public class MyApplication extends Application {
                 // could add an "exit" notification too if you want (-:
             }
         });
-
-        // start monitoring
         beaconManager.connect(new BeaconManager.ServiceReadyCallback() {
             @Override
             public void onServiceReady() {
-                beaconManager.startMonitoring(new Region(
-                        "monitored region",
-                        UUID.fromString("B9407F30-F5F8-466E-AFF9-25556B57FE6D"),
-                        22504, 48827));
+                beaconManager.startMonitoring(new Region("monitored region",
+                    UUID.fromString("B9407F30-F5F8-466E-AFF9-25556B57FE6D"), 30230, 63712));
             }
         });
     }
 
-    // helper function
     public void showNotification(String title, String message) {
         Intent notifyIntent = new Intent(this, MainActivity.class);
         notifyIntent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivities(this, 0,
-                new Intent[] { notifyIntent }, PendingIntent.FLAG_UPDATE_CURRENT);
+                new Intent[]{notifyIntent}, PendingIntent.FLAG_UPDATE_CURRENT);
         Notification notification = new Notification.Builder(this)
                 .setSmallIcon(android.R.drawable.ic_dialog_info)
                 .setContentTitle(title)

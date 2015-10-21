@@ -6,6 +6,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.estimote.sdk.Beacon;
@@ -25,15 +27,16 @@ import java.io.IOException;
 import java.util.List;
 import java.util.UUID;
 
-
 /**
  * Created by jingzou on 10/12/15.
  */
-public class MainActivity extends AppCompatActivity {
-    private final static String LOGIN_API_ENDPOINT_URL = "https://devweb.herokuapp.com/api/v1/sessions.json";
+public class RegisterActivity extends AppCompatActivity {
+    private final static String REGISTER_API_ENDPOINT_URL = "https://devweb.herokuapp.com/api/v1/registrations.json";
     private SharedPreferences mPreferences;
     private String mUserEmail;
+    private String mUserName;
     private String mUserPassword;
+    private String mUserPasswordConfirmation;
 
     private BeaconManager beaconManager;
     private Region region;
@@ -42,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_register);
 
         mPreferences = getSharedPreferences("CurrentUser", MODE_PRIVATE);
 
@@ -61,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -70,9 +75,6 @@ public class MainActivity extends AppCompatActivity {
                 beaconManager.startRanging(region);
             }
         });
-        LoginTask loginTask = new LoginTask(MainActivity.this);
-        loginTask.setMessageLoading("Logging in...");
-        loginTask.execute(LOGIN_API_ENDPOINT_URL);
     }
 
     @Override
@@ -81,8 +83,38 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
     }
 
-    private class LoginTask extends com.demanddev.brandeis.dw.UrlJsonAsyncTask {
-        public LoginTask(Context context) {
+    public void registerNewAccount(View button) {
+        EditText userEmailField = (EditText) findViewById(R.id.userEmail);
+        mUserEmail = userEmailField.getText().toString();
+        EditText userNameField = (EditText) findViewById(R.id.userName);
+        mUserName = userNameField.getText().toString();
+        EditText userPasswordField = (EditText) findViewById(R.id.userPassword);
+        mUserPassword = userPasswordField.getText().toString();
+        EditText userPasswordConfirmationField = (EditText) findViewById(R.id.userPasswordConfirmation);
+        mUserPasswordConfirmation = userPasswordConfirmationField.getText().toString();
+
+        if (mUserEmail.length() == 0 || mUserName.length() == 0 || mUserPassword.length() == 0 || mUserPasswordConfirmation.length() == 0) {
+            // input fields are empty
+            Toast.makeText(this, "Please complete all the fields",
+                    Toast.LENGTH_LONG).show();
+            return;
+        } else {
+            if (!mUserPassword.equals(mUserPasswordConfirmation)) {
+                // password doesn't match confirmation
+                Toast.makeText(this, "Your password doesn't match confirmation, check again",
+                        Toast.LENGTH_LONG).show();
+                return;
+            } else {
+                // everything is ok!
+                RegisterTask registerTask = new RegisterTask(RegisterActivity.this);
+                registerTask.setMessageLoading("Registering new account...");
+                registerTask.execute(REGISTER_API_ENDPOINT_URL);
+            }
+        }
+    }
+
+    private class RegisterTask extends com.demanddev.brandeis.dw.UrlJsonAsyncTask {
+        public RegisterTask(Context context) {
             super(context);
         }
 
@@ -101,11 +133,13 @@ public class MainActivity extends AppCompatActivity {
                     // something goes wrong
                     json.put("success", false);
                     json.put("info", "Something went wrong. Retry!");
-                    // add the user email and password to
-                    // the params
+
+                    // add the users's info to the post params
+                    userObj.put("email", mUserEmail);
+                    userObj.put("name", mUserName);
+                    userObj.put("password", mUserPassword);
+                    userObj.put("password_confirmation", mUserPasswordConfirmation);
                     userObj.put("beacon_id", beaconID);
-                    userObj.put("email", "beacontest4@example.com");
-                    userObj.put("password", "secret12345");
                     holder.put("user", userObj);
                     StringEntity se = new StringEntity(holder.toString());
                     post.setEntity(se);
@@ -121,7 +155,6 @@ public class MainActivity extends AppCompatActivity {
                 } catch (HttpResponseException e) {
                     e.printStackTrace();
                     Log.e("ClientProtocol", "" + e);
-                    json.put("info", "Email and/or password are invalid. Retry!");
                 } catch (IOException e) {
                     e.printStackTrace();
                     Log.e("IO", "" + e);
