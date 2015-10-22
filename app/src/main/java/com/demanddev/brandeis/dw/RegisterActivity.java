@@ -9,10 +9,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.estimote.sdk.Beacon;
-import com.estimote.sdk.BeaconManager;
-import com.estimote.sdk.Region;
-
 import org.apache.http.client.HttpResponseException;
 import org.apache.http.client.ResponseHandler;
 import org.apache.http.client.methods.HttpPost;
@@ -23,8 +19,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.util.List;
-import java.util.UUID;
 
 /**
  * Created by jingzou on 10/12/15.
@@ -37,10 +31,6 @@ public class RegisterActivity extends AppCompatActivity {
     private String mUserPassword;
     private String mUserPasswordConfirmation;
 
-    private BeaconManager beaconManager;
-    private Region region;
-    private String beaconID;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,32 +38,13 @@ public class RegisterActivity extends AppCompatActivity {
 
         mPreferences = getSharedPreferences("CurrentUser", MODE_PRIVATE);
 
-        beaconManager = new BeaconManager(this);
 
-        region = new Region("ranged region",
-                UUID.fromString("B9407F30-F5F8-466E-AFF9-25556B57FE6D"), null, null);
-
-        beaconManager.setRangingListener(new BeaconManager.RangingListener() {
-            @Override
-            public void onBeaconsDiscovered(Region region, List<Beacon> list) {
-                if (!list.isEmpty()) {
-                    Beacon nearestBeacon = list.get(0);
-                    beaconID = String.format("B9407F30-F5F8-466E-AFF9-25556B57FE6D:%d:%d", nearestBeacon.getMajor(), nearestBeacon.getMinor());
-                }
-            }
-        });
     }
 
 
     @Override
     protected void onResume() {
         super.onResume();
-        beaconManager.connect(new BeaconManager.ServiceReadyCallback() {
-            @Override
-            public void onServiceReady() {
-                beaconManager.startRanging(region);
-            }
-        });
     }
 
 
@@ -133,7 +104,7 @@ public class RegisterActivity extends AppCompatActivity {
                     userObj.put("name", mUserName);
                     userObj.put("password", mUserPassword);
                     userObj.put("password_confirmation", mUserPasswordConfirmation);
-                    userObj.put("beacon_id", beaconID);
+                    userObj.put("beacon_id", "");
                     holder.put("user", userObj);
                     StringEntity se = new StringEntity(holder.toString());
                     post.setEntity(se);
