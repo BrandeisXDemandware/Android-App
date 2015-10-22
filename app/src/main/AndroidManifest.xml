@@ -37,17 +37,29 @@
         <activity
             android:name=".WelcomeActivity"
             android:label="@string/title_activity_welcome"
-            android:noHistory="true" >
+            android:noHistory="true"
+            android:parentActivityName=".HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.demanddev.brandeis.dw.HomeActivity" />
         </activity>
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
-            android:noHistory="true" >
+            android:noHistory="true"
+            android:parentActivityName=".HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.demanddev.brandeis.dw.HomeActivity" />
         </activity>
         <activity
             android:name=".RegisterActivity"
             android:label="@string/title_activity_register"
-            android:noHistory="true" >
+            android:noHistory="true"
+            android:parentActivityName=".HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.demanddev.brandeis.dw.HomeActivity" />
         </activity>
     </application>
 

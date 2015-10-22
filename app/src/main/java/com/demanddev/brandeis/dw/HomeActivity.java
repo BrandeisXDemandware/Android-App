@@ -41,8 +41,7 @@ public class HomeActivity extends AppCompatActivity {
     private String BeaconID;
     private BeaconManager beaconManager;
     private Region region;
-    private String oldBeaconID = " ";
-    private int time = 0;
+    private String oldBeaconID = "";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,27 +50,49 @@ public class HomeActivity extends AppCompatActivity {
         mPreferences = getSharedPreferences("CurrentUser", MODE_PRIVATE);
         beaconManager = new BeaconManager(this);
 
-
         region = new Region("ranged region",
                 UUID.fromString("B9407F30-F5F8-466E-AFF9-25556B57FE6D"), null, null);
+
+        beaconManager.setRangingListener(new BeaconManager.RangingListener() {
+            @Override
+            public void onBeaconsDiscovered(Region region, List<Beacon> list) {
+                if (!list.isEmpty()) {
+                    Beacon nearestBeacon = list.get(0);
+                    BeaconID = String.format("B9407F30-F5F8-466E-AFF9-25556B57FE6D:%d:%d", nearestBeacon.getMajor(), nearestBeacon.getMinor());
+
+                    if (!BeaconID.equals(oldBeaconID)) {
+                        updateTasksFromAPI(LOGIN_API_ENDPOINT_URL);
+                        oldBeaconID = BeaconID;
+                        loadTasksFromAPI(TASKS_URL);
+                    }
+                }
+            }
+        });
+
+        if (!mPreferences.contains("AuthToken")) {
+            Intent intent = new Intent(this, WelcomeActivity.class);
+            startActivityForResult(intent, 0);
+        }else {
+            loadTasksFromAPI(TASKS_URL);
+        }
 
 
     }
 
     private void loadTasksFromAPI(String url) {
-        GetTasksTask getTasksTask = new GetTasksTask(HomeActivity.this);
-        getTasksTask.setMessageLoading("Loading tasks...");
-        getTasksTask.execute(url + "/" + mPreferences.getString("User", "beacontest4@example.com") + "?auth_token=" + mPreferences.getString("AuthToken", ""));
+        LoadTask loadTask = new LoadTask(HomeActivity.this);
+        loadTask.setMessageLoading("Loading tasks...");
+        loadTask.execute(url + "/" + mPreferences.getString("User", "beacontest4@example.com") + "?auth_token=" + mPreferences.getString("AuthToken", ""));
     }
 
-    private void updateTasksFromAPI(String url, String BeaconID) {
-        LoginTask loginTask = new LoginTask(HomeActivity.this);
-        loginTask.setMessageLoading("Next Beacon...");
-        loginTask.execute(url);
+    private void updateTasksFromAPI(String url) {
+        UpdateTask updateTask = new UpdateTask(HomeActivity.this);
+        updateTask.setMessageLoading("Next Beacon...");
+        updateTask.execute(url);
     }
 
-    private class LoginTask extends com.demanddev.brandeis.dw.UrlJsonAsyncTask {
-        public LoginTask(Context context) {
+    private class UpdateTask extends com.demanddev.brandeis.dw.UrlJsonAsyncTask {
+        public UpdateTask(Context context) {
             super(context);
         }
 
@@ -126,8 +147,8 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
-    private class GetTasksTask extends com.demanddev.brandeis.dw.UrlJsonAsyncTask {
-        public GetTasksTask(Context context) {
+    private class LoadTask extends com.demanddev.brandeis.dw.UrlJsonAsyncTask {
+        public LoadTask(Context context) {
             super(context);
         }
 
@@ -159,59 +180,17 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     public void onResume() {
         super.onResume();
-
-        /*
         if (mPreferences.contains("AuthToken")) {
-            loadTasksFromAPI(TASKS_URL);
-        } else {
-            Intent intent = new Intent(HomeActivity.this, WelcomeActivity.class);
+            beaconManager.connect(new BeaconManager.ServiceReadyCallback() {
+                @Override
+                public void onServiceReady() {
+                    beaconManager.startRanging(region);
+                }
+            });
+        }else{
+            Intent intent = new Intent(this, WelcomeActivity.class);
             startActivityForResult(intent, 0);
         }
-        */
-
-        if (!mPreferences.contains("AuthToken")) {
-            Intent intent = new Intent(HomeActivity.this, WelcomeActivity.class);
-            startActivityForResult(intent, 0);
-        }
-        else {
-            loadTasksFromAPI(TASKS_URL);
-            oldBeaconID = mPreferences.getString("Beacon", "");
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
-            while (time < 10000) {
-                beaconManager.setRangingListener(new BeaconManager.RangingListener() {
-                    @Override
-                    public void onBeaconsDiscovered(Region region, List<Beacon> list) {
-                        if (!list.isEmpty()) {
-                            Beacon nearestBeacon = list.get(0);
-                            BeaconID = String.format("B9407F30-F5F8-466E-AFF9-25556B57FE6D:%d:%d", nearestBeacon.getMajor(), nearestBeacon.getMinor());
-                        }
-                        if (!BeaconID.equals(oldBeaconID)) {
-                            updateTasksFromAPI(LOGIN_API_ENDPOINT_URL, BeaconID);
-                            oldBeaconID = BeaconID;
-                            try {
-                                Thread.sleep(1000);
-                            } catch (InterruptedException e) {
-                                e.printStackTrace();
-                            }
-                            loadTasksFromAPI(TASKS_URL);
-                        }
-                    }
-                });
-                time++;
-            }
-        }
-
-        beaconManager.connect(new BeaconManager.ServiceReadyCallback() {
-            @Override
-            public void onServiceReady() {
-                beaconManager.startRanging(region);
-            }
-        });
     }
 
 

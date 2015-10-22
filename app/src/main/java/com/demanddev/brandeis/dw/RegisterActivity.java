@@ -1,7 +1,6 @@
 package com.demanddev.brandeis.dw;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -176,9 +175,6 @@ public class RegisterActivity extends AppCompatActivity {
                     editor.putString("Password", json.getJSONObject("data").getString("password"));
                     editor.commit();
 
-                    // launch the HomeActivity and close this one
-                    Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-                    startActivity(intent);
                     finish();
                 }
                 Toast.makeText(context, json.getString("info"), Toast.LENGTH_LONG).show();

@@ -1,7 +1,6 @@
 package com.demanddev.brandeis.dw;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,10 +8,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import com.estimote.sdk.Beacon;
-import com.estimote.sdk.BeaconManager;
-import com.estimote.sdk.Region;
 
 import org.apache.http.client.HttpResponseException;
 import org.apache.http.client.ResponseHandler;
@@ -24,8 +19,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.util.List;
-import java.util.UUID;
 
 
 /**
@@ -37,10 +30,6 @@ public class LoginActivity extends AppCompatActivity {
     private String mUserEmail;
     private String mUserPassword;
 
-    private BeaconManager beaconManager;
-    private Region region;
-    private String beaconID;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,31 +37,11 @@ public class LoginActivity extends AppCompatActivity {
 
         mPreferences = getSharedPreferences("CurrentUser", MODE_PRIVATE);
 
-        beaconManager = new BeaconManager(this);
-
-        region = new Region("ranged region",
-                UUID.fromString("B9407F30-F5F8-466E-AFF9-25556B57FE6D"), null, null);
-
-        beaconManager.setRangingListener(new BeaconManager.RangingListener() {
-            @Override
-            public void onBeaconsDiscovered(Region region, List<Beacon> list) {
-                if (!list.isEmpty()) {
-                    Beacon nearestBeacon = list.get(0);
-                    beaconID = String.format("B9407F30-F5F8-466E-AFF9-25556B57FE6D:%d:%d", nearestBeacon.getMajor(), nearestBeacon.getMinor());
-                }
-            }
-        });
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        beaconManager.connect(new BeaconManager.ServiceReadyCallback() {
-            @Override
-            public void onServiceReady() {
-                beaconManager.startRanging(region);
-            }
-        });
     }
 
 
@@ -116,7 +85,7 @@ public class LoginActivity extends AppCompatActivity {
                     json.put("info", "Something went wrong. Retry!");
                     // add the user email and password to
                     // the params
-                    userObj.put("beacon_id", beaconID);
+                    userObj.put("beacon_id", "");
                     userObj.put("email", mUserEmail);
                     userObj.put("password", mUserPassword);
                     holder.put("user", userObj);
@@ -155,16 +124,13 @@ public class LoginActivity extends AppCompatActivity {
                     SharedPreferences.Editor editor = mPreferences.edit();
                     // save the returned auth_token into
                     // the SharedPreferences
-                    System.out.println("######" + json.getJSONObject("data").getString("password"));
                     editor.putString("AuthToken", json.getJSONObject("data").getString("auth_token"));
                     editor.putString("User", json.getJSONObject("data").getString("user"));
                     editor.putString("Beacon", json.getJSONObject("data").getString("beacon"));
                     editor.putString("Password", json.getJSONObject("data").getString("password"));
                     editor.commit();
 
-                    // launch the HomeActivity and close this one
-                    Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-                    startActivity(intent);
+                    // done
                     finish();
                 }
                 Toast.makeText(context, json.getString("info"), Toast.LENGTH_LONG).show();
