@@ -83,7 +83,6 @@ public class UrlJsonAsyncTask extends AsyncTask<String, Void, JSONObject> {
 		if (json != null) {
 			if (json.getBoolean("success")) {
 				// success
-				return;
 			} else {
 				throw new IOException(json.getString("info"));
 			}

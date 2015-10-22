@@ -48,14 +48,14 @@ public class JsonSpinner extends Spinner {
 	
 	// The key and value for the JSONArray must be "k" and "v" respectively
 	public void populate(JSONArray jsonArray) throws JSONException {
-        ArrayAdapter<KeyValuePair<String,String>> adapter = new ArrayAdapter<KeyValuePair<String,String>>(this.getContext(), android.R.layout.simple_spinner_item);
+        ArrayAdapter<KeyValuePair<String,String>> adapter = new ArrayAdapter<>(this.getContext(), android.R.layout.simple_spinner_item);
 	    	adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         this.setAdapter(adapter);	
         
         adapter.clear();
         for (int i = 0; i < jsonArray.length(); i++) {
 		    	JSONObject pair = jsonArray.getJSONObject(i);
-		    adapter.add(new KeyValuePair<String,String>(pair.getString(this.keyString), pair.getString(this.valueString)));
+		    adapter.add(new KeyValuePair<>(pair.getString(this.keyString), pair.getString(this.valueString)));
 	    }
 	}
 }

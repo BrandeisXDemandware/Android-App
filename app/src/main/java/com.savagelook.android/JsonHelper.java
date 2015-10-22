@@ -47,7 +47,7 @@ public class JsonHelper {
 	static private String getStringFromInputStream(InputStream is) throws IOException {	
 		BufferedReader br = new BufferedReader(new InputStreamReader(is));
 		StringBuilder sb = new StringBuilder();
-		String line = "";
+		String line;
 		while((line = br.readLine()) != null) {
 			sb.append(line);
 		}

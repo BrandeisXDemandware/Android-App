@@ -62,13 +62,11 @@ public class RegisterActivity extends AppCompatActivity {
             // input fields are empty
             Toast.makeText(this, "Please complete all the fields",
                     Toast.LENGTH_LONG).show();
-            return;
         } else {
             if (!mUserPassword.equals(mUserPasswordConfirmation)) {
                 // password doesn't match confirmation
                 Toast.makeText(this, "Your password doesn't match confirmation, check again",
                         Toast.LENGTH_LONG).show();
-                return;
             } else {
                 // everything is ok!
                 RegisterTask registerTask = new RegisterTask(RegisterActivity.this);
@@ -89,7 +87,7 @@ public class RegisterActivity extends AppCompatActivity {
             HttpPost post = new HttpPost(urls[0]);
             JSONObject holder = new JSONObject();
             JSONObject userObj = new JSONObject();
-            String response = null;
+            String response;
             JSONObject json = new JSONObject();
 
             try {

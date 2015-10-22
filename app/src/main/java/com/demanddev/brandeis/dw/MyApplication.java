@@ -68,7 +68,7 @@ public class MyApplication extends Application {
                 new Intent[] { notifyIntent }, PendingIntent.FLAG_UPDATE_CURRENT);
 
         Drawable myDrawable = getResources().getDrawable(R.drawable.dw);
-        Bitmap anImage      = ((BitmapDrawable) myDrawable).getBitmap();
+        Bitmap anImage      = ((BitmapDrawable) myDrawable) != null ? ((BitmapDrawable) myDrawable).getBitmap() : null;
 
         Notification notification = new Notification.Builder(this)
                 .setSmallIcon(R.mipmap.ic_launcher)

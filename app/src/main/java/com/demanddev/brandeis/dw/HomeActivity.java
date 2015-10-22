@@ -102,7 +102,7 @@ public class HomeActivity extends AppCompatActivity {
             HttpPost post = new HttpPost(urls[0]);
             JSONObject holder = new JSONObject();
             JSONObject userObj = new JSONObject();
-            String response = null;
+            String response;
             JSONObject json = new JSONObject();
 
             try {
@@ -157,7 +157,7 @@ public class HomeActivity extends AppCompatActivity {
             try {
                 JSONArray jsonTasks = json.getJSONObject("data").getJSONArray("tasks");
                 int length = jsonTasks.length();
-                List<String> tasksTitles = new ArrayList<String>(length);
+                List<String> tasksTitles = new ArrayList<>(length);
 
                 for (int i = 0; i < length; i++) {
                     tasksTitles.add(jsonTasks.getJSONObject(i).getString("recommend"));
@@ -165,7 +165,7 @@ public class HomeActivity extends AppCompatActivity {
 
                 ListView tasksListView = (ListView) findViewById (R.id.tasks_list_view);
                 if (tasksListView != null) {
-                    tasksListView.setAdapter(new ArrayAdapter<String>(HomeActivity.this,
+                    tasksListView.setAdapter(new ArrayAdapter<>(HomeActivity.this,
                             android.R.layout.simple_list_item_1, tasksTitles));
                 }
             } catch (Exception e) {

@@ -55,7 +55,6 @@ public class LoginActivity extends AppCompatActivity {
             // input fields are empty
             Toast.makeText(this, "Please complete all the fields",
                     Toast.LENGTH_LONG).show();
-            return;
         } else {
             LoginTask loginTask = new LoginTask(LoginActivity.this);
             loginTask.setMessageLoading("Logging in...");
@@ -74,7 +73,7 @@ public class LoginActivity extends AppCompatActivity {
             HttpPost post = new HttpPost(urls[0]);
             JSONObject holder = new JSONObject();
             JSONObject userObj = new JSONObject();
-            String response = null;
+            String response;
             JSONObject json = new JSONObject();
 
             try {
