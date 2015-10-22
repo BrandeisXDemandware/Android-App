@@ -75,11 +75,6 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    protected void onPause() {
-        beaconManager.stopRanging(region);
-        super.onPause();
-    }
 
     public void login(View button) {
         EditText userEmailField = (EditText) findViewById(R.id.userEmail);
@@ -160,9 +155,11 @@ public class LoginActivity extends AppCompatActivity {
                     SharedPreferences.Editor editor = mPreferences.edit();
                     // save the returned auth_token into
                     // the SharedPreferences
+                    System.out.println("######" + json.getJSONObject("data").getString("password"));
                     editor.putString("AuthToken", json.getJSONObject("data").getString("auth_token"));
                     editor.putString("User", json.getJSONObject("data").getString("user"));
                     editor.putString("Beacon", json.getJSONObject("data").getString("beacon"));
+                    editor.putString("Password", json.getJSONObject("data").getString("password"));
                     editor.commit();
 
                     // launch the HomeActivity and close this one

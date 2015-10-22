@@ -77,11 +77,6 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    protected void onPause() {
-        beaconManager.stopRanging(region);
-        super.onPause();
-    }
 
     public void registerNewAccount(View button) {
         EditText userEmailField = (EditText) findViewById(R.id.userEmail);
@@ -178,6 +173,7 @@ public class RegisterActivity extends AppCompatActivity {
                     editor.putString("AuthToken", json.getJSONObject("data").getString("auth_token"));
                     editor.putString("User", json.getJSONObject("data").getString("user"));
                     editor.putString("Beacon", json.getJSONObject("data").getString("beacon"));
+                    editor.putString("Password", json.getJSONObject("data").getString("password"));
                     editor.commit();
 
                     // launch the HomeActivity and close this one
