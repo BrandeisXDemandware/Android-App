@@ -1,0 +1,19 @@
+{
+  "_v":"15.9",
+  "_type":"profile",
+  "birthday":"1900-01-01",
+  "company_name":"Demandware",
+  "customer_no":"S00000005",
+  "email":"patricia@demandware.com",
+  "fax":"781-756-3700",
+  "first_name":"Patricia",
+  "gender":"f",
+  "last_login_time":"2013-11-06T11:02:02.131Z",
+  "last_name":"Miller","last_visit_time":"2013-11-06T11:02:02.131Z",
+  "phone_business":"781-756-3700",
+  "phone_home":"123-456-789",
+  "phone_mobile":"123-456-789",
+  "previous_login_time":"2009-05-26T14:28:06.000Z",
+  "previous_visit_time":"2009-05-26T14:28:06.000Z",
+  "title":"Big Spender"
+}

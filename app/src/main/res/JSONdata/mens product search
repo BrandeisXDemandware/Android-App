@@ -1,0 +1,1269 @@
+{
+  "_v" : "15.9",
+  "_type" : "product_search_result",
+  "count" : 8,
+  "hits" : [ {
+    "_type" : "product_search_hit",
+    "currency" : "USD",
+    "image" : {
+      "_type" : "image",
+      "alt" : "Slim Fit Pants, , large",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw1cd5f8c9/images/large/B0374208_B7H_0.jpg",
+      "title" : "Slim Fit Pants, "
+    },
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/91736743?q=&start=0&count=8&refine_1=cgid%3Dmens&locale=default&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "price" : 50.00,
+    "price_max" : 175.00,
+    "product_id" : "91736743",
+    "product_name" : "Slim Fit Pants",
+    "product_type" : {
+      "_type" : "product_type",
+      "master" : true
+    },
+    "variation_attributes" : [ {
+      "_type" : "variation_attribute",
+      "id" : "color",
+      "name" : "Color",
+      "values" : [ {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, Black, medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwe43949f9/images/medium/B0374208_B7H_0.jpg",
+          "title" : "Slim Fit Pants, Black"
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, Black, swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw1b4efcc3/images/swatch/B0374208_B7H_sw.jpg",
+          "title" : "Slim Fit Pants, Black"
+        },
+        "name" : "Black",
+        "value" : "B7H"
+      } ]
+    }, {
+      "_type" : "variation_attribute",
+      "id" : "size",
+      "name" : "Size",
+      "values" : [ {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwe43949f9/images/medium/B0374208_B7H_0.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw1b4efcc3/images/swatch/B0374208_B7H_sw.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "name" : "28",
+        "value" : "28"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwe43949f9/images/medium/B0374208_B7H_0.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw1b4efcc3/images/swatch/B0374208_B7H_sw.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "name" : "29",
+        "value" : "29"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwe43949f9/images/medium/B0374208_B7H_0.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw1b4efcc3/images/swatch/B0374208_B7H_sw.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "name" : "30",
+        "value" : "30"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwe43949f9/images/medium/B0374208_B7H_0.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw1b4efcc3/images/swatch/B0374208_B7H_sw.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "name" : "31",
+        "value" : "31"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwe43949f9/images/medium/B0374208_B7H_0.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw1b4efcc3/images/swatch/B0374208_B7H_sw.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "name" : "32",
+        "value" : "32"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwe43949f9/images/medium/B0374208_B7H_0.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw1b4efcc3/images/swatch/B0374208_B7H_sw.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "name" : "33",
+        "value" : "33"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwe43949f9/images/medium/B0374208_B7H_0.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw1b4efcc3/images/swatch/B0374208_B7H_sw.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "name" : "34",
+        "value" : "34"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwe43949f9/images/medium/B0374208_B7H_0.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw1b4efcc3/images/swatch/B0374208_B7H_sw.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "name" : "36",
+        "value" : "36"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwe43949f9/images/medium/B0374208_B7H_0.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw1b4efcc3/images/swatch/B0374208_B7H_sw.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "name" : "38",
+        "value" : "38"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwe43949f9/images/medium/B0374208_B7H_0.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Slim Fit Pants, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw1b4efcc3/images/swatch/B0374208_B7H_sw.jpg",
+          "title" : "Slim Fit Pants, "
+        },
+        "name" : "40",
+        "value" : "40"
+      } ]
+    } ]
+  }, {
+    "_type" : "product_search_hit",
+    "currency" : "USD",
+    "image" : {
+      "_type" : "image",
+      "alt" : "Summer Bomber Jacket, , large",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw8dff1388/images/large/B0574182_001_0.jpg",
+      "title" : "Summer Bomber Jacket, "
+    },
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/11736753?q=&start=0&count=8&refine_1=cgid%3Dmens&locale=default&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "price" : 315.00,
+    "product_id" : "11736753",
+    "product_name" : "Summer Bomber Jacket",
+    "product_type" : {
+      "_type" : "product_type",
+      "master" : true
+    },
+    "variation_attributes" : [ {
+      "_type" : "variation_attribute",
+      "id" : "color",
+      "name" : "Color",
+      "values" : [ {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Summer Bomber Jacket, BLACK, medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw7fcefb6c/images/medium/B0574182_001_0.jpg",
+          "title" : "Summer Bomber Jacket, BLACK"
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Summer Bomber Jacket, BLACK, swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwf63bd957/images/swatch/B0574182_001_sw.jpg",
+          "title" : "Summer Bomber Jacket, BLACK"
+        },
+        "name" : "BLACK",
+        "value" : "001"
+      } ]
+    }, {
+      "_type" : "variation_attribute",
+      "id" : "size",
+      "name" : "Size",
+      "values" : [ {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Summer Bomber Jacket, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw7fcefb6c/images/medium/B0574182_001_0.jpg",
+          "title" : "Summer Bomber Jacket, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Summer Bomber Jacket, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwf63bd957/images/swatch/B0574182_001_sw.jpg",
+          "title" : "Summer Bomber Jacket, "
+        },
+        "name" : "XS",
+        "value" : "XS"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Summer Bomber Jacket, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw7fcefb6c/images/medium/B0574182_001_0.jpg",
+          "title" : "Summer Bomber Jacket, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Summer Bomber Jacket, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwf63bd957/images/swatch/B0574182_001_sw.jpg",
+          "title" : "Summer Bomber Jacket, "
+        },
+        "name" : "S",
+        "value" : "S"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Summer Bomber Jacket, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw7fcefb6c/images/medium/B0574182_001_0.jpg",
+          "title" : "Summer Bomber Jacket, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Summer Bomber Jacket, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwf63bd957/images/swatch/B0574182_001_sw.jpg",
+          "title" : "Summer Bomber Jacket, "
+        },
+        "name" : "M",
+        "value" : "M"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Summer Bomber Jacket, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw7fcefb6c/images/medium/B0574182_001_0.jpg",
+          "title" : "Summer Bomber Jacket, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Summer Bomber Jacket, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwf63bd957/images/swatch/B0574182_001_sw.jpg",
+          "title" : "Summer Bomber Jacket, "
+        },
+        "name" : "L",
+        "value" : "L"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Summer Bomber Jacket, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw7fcefb6c/images/medium/B0574182_001_0.jpg",
+          "title" : "Summer Bomber Jacket, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Summer Bomber Jacket, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwf63bd957/images/swatch/B0574182_001_sw.jpg",
+          "title" : "Summer Bomber Jacket, "
+        },
+        "name" : "XL",
+        "value" : "XL"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Summer Bomber Jacket, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw7fcefb6c/images/medium/B0574182_001_0.jpg",
+          "title" : "Summer Bomber Jacket, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Summer Bomber Jacket, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwf63bd957/images/swatch/B0574182_001_sw.jpg",
+          "title" : "Summer Bomber Jacket, "
+        },
+        "name" : "XXL",
+        "value" : "XXL"
+      } ]
+    } ]
+  }, {
+    "_type" : "product_search_hit",
+    "currency" : "USD",
+    "image" : {
+      "_type" : "image",
+      "alt" : "Two Button Sport Coat, , large",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw66285ac1/images/large/B0574185_P2V_0.jpg",
+      "title" : "Two Button Sport Coat, "
+    },
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/21736758?q=&start=0&count=8&refine_1=cgid%3Dmens&locale=default&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "price" : 475.00,
+    "product_id" : "21736758",
+    "product_name" : "Two Button Sport Coat",
+    "product_type" : {
+      "_type" : "product_type",
+      "master" : true
+    },
+    "variation_attributes" : [ {
+      "_type" : "variation_attribute",
+      "id" : "color",
+      "name" : "Color",
+      "values" : [ {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Two Button Sport Coat, Multi, medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw9452f4df/images/medium/B0574185_P2V_0.jpg",
+          "title" : "Two Button Sport Coat, Multi"
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Two Button Sport Coat, Multi, swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw14582a85/images/swatch/B0574185_P2V_sw.jpg",
+          "title" : "Two Button Sport Coat, Multi"
+        },
+        "name" : "Multi",
+        "value" : "P2V"
+      } ]
+    }, {
+      "_type" : "variation_attribute",
+      "id" : "size",
+      "name" : "Size",
+      "values" : [ {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Two Button Sport Coat, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw9452f4df/images/medium/B0574185_P2V_0.jpg",
+          "title" : "Two Button Sport Coat, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Two Button Sport Coat, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw14582a85/images/swatch/B0574185_P2V_sw.jpg",
+          "title" : "Two Button Sport Coat, "
+        },
+        "name" : "36",
+        "value" : "36"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Two Button Sport Coat, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw9452f4df/images/medium/B0574185_P2V_0.jpg",
+          "title" : "Two Button Sport Coat, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Two Button Sport Coat, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw14582a85/images/swatch/B0574185_P2V_sw.jpg",
+          "title" : "Two Button Sport Coat, "
+        },
+        "name" : "38",
+        "value" : "38"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Two Button Sport Coat, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw9452f4df/images/medium/B0574185_P2V_0.jpg",
+          "title" : "Two Button Sport Coat, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Two Button Sport Coat, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw14582a85/images/swatch/B0574185_P2V_sw.jpg",
+          "title" : "Two Button Sport Coat, "
+        },
+        "name" : "40",
+        "value" : "40"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Two Button Sport Coat, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw9452f4df/images/medium/B0574185_P2V_0.jpg",
+          "title" : "Two Button Sport Coat, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Two Button Sport Coat, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw14582a85/images/swatch/B0574185_P2V_sw.jpg",
+          "title" : "Two Button Sport Coat, "
+        },
+        "name" : "42",
+        "value" : "42"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Two Button Sport Coat, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw9452f4df/images/medium/B0574185_P2V_0.jpg",
+          "title" : "Two Button Sport Coat, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Two Button Sport Coat, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw14582a85/images/swatch/B0574185_P2V_sw.jpg",
+          "title" : "Two Button Sport Coat, "
+        },
+        "name" : "44",
+        "value" : "44"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Two Button Sport Coat, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw9452f4df/images/medium/B0574185_P2V_0.jpg",
+          "title" : "Two Button Sport Coat, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Two Button Sport Coat, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw14582a85/images/swatch/B0574185_P2V_sw.jpg",
+          "title" : "Two Button Sport Coat, "
+        },
+        "name" : "46",
+        "value" : "46"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Two Button Sport Coat, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw9452f4df/images/medium/B0574185_P2V_0.jpg",
+          "title" : "Two Button Sport Coat, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Two Button Sport Coat, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw14582a85/images/swatch/B0574185_P2V_sw.jpg",
+          "title" : "Two Button Sport Coat, "
+        },
+        "name" : "48",
+        "value" : "48"
+      } ]
+    } ]
+  }, {
+    "_type" : "product_search_hit",
+    "currency" : "USD",
+    "image" : {
+      "_type" : "image",
+      "alt" : "Slim Pants, , large",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw3e4250ca/images/large/B0274208_ED5_0.jpg",
+      "title" : "Slim Pants, "
+    },
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/22416787?q=&start=0&count=8&refine_1=cgid%3Dmens&locale=default&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "price" : 175.00,
+    "product_id" : "22416787",
+    "product_name" : "Slim Pants",
+    "product_type" : {
+      "_type" : "product_type",
+      "master" : true
+    },
+    "variation_attributes" : [ {
+      "_type" : "variation_attribute",
+      "id" : "color",
+      "name" : "Color",
+      "values" : [ {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Pants, Beige, medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwdf7544ab/images/medium/B0274208_ED5_0.jpg",
+          "title" : "Slim Pants, Beige"
+        },
+        "name" : "Beige",
+        "value" : "ED5"
+      } ]
+    }, {
+      "_type" : "variation_attribute",
+      "id" : "size",
+      "name" : "Size",
+      "values" : [ {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwdf7544ab/images/medium/B0274208_ED5_0.jpg",
+          "title" : "Slim Pants, "
+        },
+        "name" : "28",
+        "value" : "28"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwdf7544ab/images/medium/B0274208_ED5_0.jpg",
+          "title" : "Slim Pants, "
+        },
+        "name" : "29",
+        "value" : "29"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwdf7544ab/images/medium/B0274208_ED5_0.jpg",
+          "title" : "Slim Pants, "
+        },
+        "name" : "30",
+        "value" : "30"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwdf7544ab/images/medium/B0274208_ED5_0.jpg",
+          "title" : "Slim Pants, "
+        },
+        "name" : "31",
+        "value" : "31"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwdf7544ab/images/medium/B0274208_ED5_0.jpg",
+          "title" : "Slim Pants, "
+        },
+        "name" : "32",
+        "value" : "32"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwdf7544ab/images/medium/B0274208_ED5_0.jpg",
+          "title" : "Slim Pants, "
+        },
+        "name" : "33",
+        "value" : "33"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwdf7544ab/images/medium/B0274208_ED5_0.jpg",
+          "title" : "Slim Pants, "
+        },
+        "name" : "34",
+        "value" : "34"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwdf7544ab/images/medium/B0274208_ED5_0.jpg",
+          "title" : "Slim Pants, "
+        },
+        "name" : "36",
+        "value" : "36"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwdf7544ab/images/medium/B0274208_ED5_0.jpg",
+          "title" : "Slim Pants, "
+        },
+        "name" : "38",
+        "value" : "38"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Slim Pants, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwdf7544ab/images/medium/B0274208_ED5_0.jpg",
+          "title" : "Slim Pants, "
+        },
+        "name" : "40",
+        "value" : "40"
+      } ]
+    } ]
+  }, {
+    "_type" : "product_search_hit",
+    "currency" : "USD",
+    "image" : {
+      "_type" : "image",
+      "alt" : "Straight Leg Trousers, , large",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw4cd5c71f/images/large/B0274206_GYX_0.jpg",
+      "title" : "Straight Leg Trousers, "
+    },
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/12416789?q=&start=0&count=8&refine_1=cgid%3Dmens&locale=default&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "price" : 195.00,
+    "product_id" : "12416789",
+    "product_name" : "Straight Leg Trousers",
+    "product_type" : {
+      "_type" : "product_type",
+      "master" : true
+    },
+    "variation_attributes" : [ {
+      "_type" : "variation_attribute",
+      "id" : "color",
+      "name" : "Color",
+      "values" : [ {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, Navy, medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwc0372752/images/medium/B0274206_GYX_0.jpg",
+          "title" : "Straight Leg Trousers, Navy"
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, Navy, swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw54b3a21f/images/swatch/B0274206_GYX_sw.jpg",
+          "title" : "Straight Leg Trousers, Navy"
+        },
+        "name" : "Navy",
+        "value" : "GYX"
+      } ]
+    }, {
+      "_type" : "variation_attribute",
+      "id" : "size",
+      "name" : "Size",
+      "values" : [ {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwc0372752/images/medium/B0274206_GYX_0.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw54b3a21f/images/swatch/B0274206_GYX_sw.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "name" : "28",
+        "value" : "28"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwc0372752/images/medium/B0274206_GYX_0.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw54b3a21f/images/swatch/B0274206_GYX_sw.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "name" : "29",
+        "value" : "29"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwc0372752/images/medium/B0274206_GYX_0.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw54b3a21f/images/swatch/B0274206_GYX_sw.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "name" : "30",
+        "value" : "30"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwc0372752/images/medium/B0274206_GYX_0.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw54b3a21f/images/swatch/B0274206_GYX_sw.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "name" : "31",
+        "value" : "31"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwc0372752/images/medium/B0274206_GYX_0.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw54b3a21f/images/swatch/B0274206_GYX_sw.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "name" : "32",
+        "value" : "32"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwc0372752/images/medium/B0274206_GYX_0.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw54b3a21f/images/swatch/B0274206_GYX_sw.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "name" : "33",
+        "value" : "33"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwc0372752/images/medium/B0274206_GYX_0.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw54b3a21f/images/swatch/B0274206_GYX_sw.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "name" : "34",
+        "value" : "34"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwc0372752/images/medium/B0274206_GYX_0.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw54b3a21f/images/swatch/B0274206_GYX_sw.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "name" : "36",
+        "value" : "36"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwc0372752/images/medium/B0274206_GYX_0.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw54b3a21f/images/swatch/B0274206_GYX_sw.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "name" : "38",
+        "value" : "38"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwc0372752/images/medium/B0274206_GYX_0.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Straight Leg Trousers, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw54b3a21f/images/swatch/B0274206_GYX_sw.jpg",
+          "title" : "Straight Leg Trousers, "
+        },
+        "name" : "40",
+        "value" : "40"
+      } ]
+    } ]
+  }, {
+    "_type" : "product_search_hit",
+    "currency" : "USD",
+    "image" : {
+      "_type" : "image",
+      "alt" : "Modern Dress Shirt in Pink, , large",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwaaf94969/images/large/B0174504_J5K_0.jpg",
+      "title" : "Modern Dress Shirt in Pink, "
+    },
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/25585429?q=&start=0&count=8&refine_1=cgid%3Dmens&locale=default&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "price" : 135.00,
+    "product_id" : "25585429",
+    "product_name" : "Modern Dress Shirt in Pink",
+    "product_type" : {
+      "_type" : "product_type",
+      "master" : true
+    },
+    "variation_attributes" : [ {
+      "_type" : "variation_attribute",
+      "id" : "color",
+      "name" : "color",
+      "values" : [ {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Modern Dress Shirt in Pink, Pink, medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw78dc0ef8/images/medium/B0174504_J5K_0.jpg",
+          "title" : "Modern Dress Shirt in Pink, Pink"
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Modern Dress Shirt in Pink, Pink, swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw50bfccc8/images/swatch/B0174504_J5K_sw.jpg",
+          "title" : "Modern Dress Shirt in Pink, Pink"
+        },
+        "name" : "Pink",
+        "value" : "pink"
+      } ]
+    }, {
+      "_type" : "variation_attribute",
+      "id" : "size",
+      "name" : "size",
+      "values" : [ {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Modern Dress Shirt in Pink, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw78dc0ef8/images/medium/B0174504_J5K_0.jpg",
+          "title" : "Modern Dress Shirt in Pink, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Modern Dress Shirt in Pink, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw50bfccc8/images/swatch/B0174504_J5K_sw.jpg",
+          "title" : "Modern Dress Shirt in Pink, "
+        },
+        "name" : "15R",
+        "value" : "15R"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Modern Dress Shirt in Pink, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw78dc0ef8/images/medium/B0174504_J5K_0.jpg",
+          "title" : "Modern Dress Shirt in Pink, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Modern Dress Shirt in Pink, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw50bfccc8/images/swatch/B0174504_J5K_sw.jpg",
+          "title" : "Modern Dress Shirt in Pink, "
+        },
+        "name" : "15L",
+        "value" : "15L"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Modern Dress Shirt in Pink, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw78dc0ef8/images/medium/B0174504_J5K_0.jpg",
+          "title" : "Modern Dress Shirt in Pink, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Modern Dress Shirt in Pink, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw50bfccc8/images/swatch/B0174504_J5K_sw.jpg",
+          "title" : "Modern Dress Shirt in Pink, "
+        },
+        "name" : "16R",
+        "value" : "16R"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Modern Dress Shirt in Pink, , medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw78dc0ef8/images/medium/B0174504_J5K_0.jpg",
+          "title" : "Modern Dress Shirt in Pink, "
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Modern Dress Shirt in Pink, , swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw50bfccc8/images/swatch/B0174504_J5K_sw.jpg",
+          "title" : "Modern Dress Shirt in Pink, "
+        },
+        "name" : "16L",
+        "value" : "16L"
+      } ]
+    } ]
+  }, {
+    "_type" : "product_search_hit",
+    "currency" : "USD",
+    "image" : {
+      "_type" : "image",
+      "alt" : "Solid Silk Tie, , large",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwa003e1ec/images/large/PG.949432114S.NAVYSI.PZ.jpg",
+      "title" : "Solid Silk Tie, "
+    },
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/25752218?q=&start=0&count=8&refine_1=cgid%3Dmens&locale=default&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "price" : 29.99,
+    "product_id" : "25752218",
+    "product_name" : "Solid Silk Tie",
+    "product_type" : {
+      "_type" : "product_type",
+      "master" : true
+    },
+    "variation_attributes" : [ {
+      "_type" : "variation_attribute",
+      "id" : "color",
+      "name" : "Color",
+      "values" : [ {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Solid Silk Tie, Navy, medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw1489eee7/images/medium/PG.949432114S.NAVYSI.PZ.jpg",
+          "title" : "Solid Silk Tie, Navy"
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Solid Silk Tie, Navy, swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw8f702325/images/swatch/PG.949432114S.NAVYSI.CP.jpg",
+          "title" : "Solid Silk Tie, Navy"
+        },
+        "name" : "Navy",
+        "value" : "NAVYSI"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Solid Silk Tie, Red, medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw6737d755/images/medium/PG.949432114S.REDSI.PZ.jpg",
+          "title" : "Solid Silk Tie, Red"
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Solid Silk Tie, Red, swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw4af79571/images/swatch/PG.949432114S.REDSI.CP.jpg",
+          "title" : "Solid Silk Tie, Red"
+        },
+        "name" : "Red",
+        "value" : "REDSI"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Solid Silk Tie, Yellow, medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw287f6433/images/medium/PG.949432114S.YELLOSI.PZ.jpg",
+          "title" : "Solid Silk Tie, Yellow"
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Solid Silk Tie, Yellow, swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw9d5d3bfe/images/swatch/PG.949432114S.YELLOSI.CP.jpg",
+          "title" : "Solid Silk Tie, Yellow"
+        },
+        "name" : "Yellow",
+        "value" : "YELLOSI"
+      } ]
+    } ]
+  }, {
+    "_type" : "product_search_hit",
+    "currency" : "USD",
+    "image" : {
+      "_type" : "image",
+      "alt" : "Striped Silk Tie, , large",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw09f18f3d/images/large/PG.949114314S.REDSI.PZ.jpg",
+      "title" : "Striped Silk Tie, "
+    },
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/25752986?q=&start=0&count=8&refine_1=cgid%3Dmens&locale=default&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "price" : 29.99,
+    "product_id" : "25752986",
+    "product_name" : "Striped Silk Tie",
+    "product_type" : {
+      "_type" : "product_type",
+      "master" : true
+    },
+    "variation_attributes" : [ {
+      "_type" : "variation_attribute",
+      "id" : "color",
+      "name" : "Color",
+      "values" : [ {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Striped Silk Tie, Red, medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw4ee934c6/images/medium/PG.949114314S.REDSI.PZ.jpg",
+          "title" : "Striped Silk Tie, Red"
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Striped Silk Tie, Red, swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwf1b23992/images/swatch/PG.949114314S.REDSI.CP.jpg",
+          "title" : "Striped Silk Tie, Red"
+        },
+        "name" : "Red",
+        "value" : "REDSI"
+      }, {
+        "_type" : "variation_attribute_value",
+        "image" : {
+          "_type" : "image",
+          "alt" : "Striped Silk Tie, Turquoise, medium",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw7ea984f1/images/medium/PG.949114314S.TURQUSI.PZ.jpg",
+          "title" : "Striped Silk Tie, Turquoise"
+        },
+        "image_swatch" : {
+          "_type" : "image",
+          "alt" : "Striped Silk Tie, Turquoise, swatch",
+          "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw7ec1f2a2/images/swatch/PG.949114314S.TURQUSI.CP.jpg",
+          "title" : "Striped Silk Tie, Turquoise"
+        },
+        "name" : "Turquoise",
+        "value" : "TURQUSI"
+      } ]
+    } ]
+  } ],
+  "next" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/product_search?q=&expand=images%2Cprices%2Cvariations&pretty_print=true&start=8&count=8&refine_1=cgid%3Dmens&locale=default&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+  "query" : "",
+  "refinements" : [ {
+    "_type" : "product_search_refinement",
+    "attribute_id" : "cgid",
+    "label" : "Category",
+    "values" : [ {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 20,
+      "label" : "New Arrivals",
+      "value" : "newarrivals"
+    }, {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 49,
+      "label" : "Mens",
+      "value" : "mens",
+      "values" : [ {
+        "_type" : "product_search_refinement_value",
+        "hit_count" : 36,
+        "label" : "Clothing",
+        "value" : "mens-clothing"
+      }, {
+        "_type" : "product_search_refinement_value",
+        "hit_count" : 13,
+        "label" : "Accessories",
+        "value" : "mens-accessories"
+      } ]
+    } ]
+  }, {
+    "_type" : "product_search_refinement",
+    "attribute_id" : "c_refinementColor",
+    "label" : "Color",
+    "values" : [ {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 3,
+      "label" : "Beige",
+      "presentation_id" : "beige",
+      "value" : "Beige"
+    }, {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 13,
+      "label" : "Black",
+      "presentation_id" : "black",
+      "value" : "Black"
+    }, {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 10,
+      "label" : "Blue",
+      "presentation_id" : "blue",
+      "value" : "Blue"
+    }, {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 2,
+      "label" : "Navy",
+      "presentation_id" : "navy",
+      "value" : "Navy"
+    }, {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 3,
+      "label" : "Brown",
+      "presentation_id" : "brown",
+      "value" : "Brown"
+    }, {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 1,
+      "label" : "Green",
+      "presentation_id" : "green",
+      "value" : "Green"
+    }, {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 10,
+      "label" : "Grey",
+      "presentation_id" : "grey",
+      "value" : "Grey"
+    }, {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 0,
+      "label" : "Orange",
+      "presentation_id" : "orange",
+      "value" : "Orange"
+    }, {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 1,
+      "label" : "Pink",
+      "presentation_id" : "pink",
+      "value" : "Pink"
+    }, {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 0,
+      "label" : "Purple",
+      "presentation_id" : "purple",
+      "value" : "Purple"
+    }, {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 2,
+      "label" : "Red",
+      "presentation_id" : "red",
+      "value" : "Red"
+    }, {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 5,
+      "label" : "White",
+      "presentation_id" : "white",
+      "value" : "White"
+    }, {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 2,
+      "label" : "Yellow",
+      "presentation_id" : "yellow",
+      "value" : "Yellow"
+    }, {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 1,
+      "label" : "Miscellaneous",
+      "presentation_id" : "miscellaneous",
+      "value" : "Miscellaneous"
+    } ]
+  }, {
+    "_type" : "product_search_refinement",
+    "attribute_id" : "price",
+    "label" : "Price",
+    "values" : [ {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 5,
+      "label" : "$20 - $49.99",
+      "value" : "(20..50)"
+    }, {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 8,
+      "label" : "$50 - $99.99",
+      "value" : "(50..100)"
+    }, {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 37,
+      "label" : "$100 - $499.99",
+      "value" : "(100..500)"
+    } ]
+  }, {
+    "_type" : "product_search_refinement",
+    "attribute_id" : "c_isNew",
+    "label" : "New Arrival",
+    "values" : [ {
+      "_type" : "product_search_refinement_value",
+      "hit_count" : 8,
+      "label" : "true",
+      "value" : "true"
+    } ]
+  } ],
+  "selected_refinements" : {
+    "cgid" : "mens"
+  },
+  "sorting_options" : [ {
+    "_type" : "product_search_sorting_option",
+    "id" : "best-matches",
+    "label" : "Best Matches"
+  }, {
+    "_type" : "product_search_sorting_option",
+    "id" : "price-low-to-high",
+    "label" : "Price Low To High"
+  }, {
+    "_type" : "product_search_sorting_option",
+    "id" : "price-high-to-low",
+    "label" : "Price High To Low"
+  }, {
+    "_type" : "product_search_sorting_option",
+    "id" : "product-name-ascending",
+    "label" : "Product Name A - Z"
+  }, {
+    "_type" : "product_search_sorting_option",
+    "id" : "product-name-descending",
+    "label" : "Product Name Z - A"
+  }, {
+    "_type" : "product_search_sorting_option",
+    "id" : "brand",
+    "label" : "Brand"
+  }, {
+    "_type" : "product_search_sorting_option",
+    "id" : "most-popular",
+    "label" : "Most Popular"
+  }, {
+    "_type" : "product_search_sorting_option",
+    "id" : "top-sellers",
+    "label" : "Top Sellers"
+  } ],
+  "start" : 0,
+  "total" : 49
+}

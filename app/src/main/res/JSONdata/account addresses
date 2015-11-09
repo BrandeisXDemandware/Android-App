@@ -1,0 +1,32 @@
+{
+  "_v":"15.9",
+  "_type":"customer_address_result",
+  "count":2,
+  "total":2,
+  "data":
+  [{
+      "address1":"10 Somewhere St.",
+      "address2":"",
+      "address_id":"8461948625703718"
+      "address_name":"",
+      "city":"Boston",
+      "company_name":"",
+      "country_code":"",
+      "first_name":"Egon",
+      "full_name":"Egon Krenz",
+      "job_title":"",
+      "last_name":"Krenz",
+      "phone":"",
+      "postal_code":"",
+      "post_box":"",
+      "preferred":true,
+      "salutation":"",             
+      "second_name":"",
+      "state_code":"",
+      "suffix":"",
+      "suite":"",
+      "title":""
+    },
+    ...
+  ]
+}

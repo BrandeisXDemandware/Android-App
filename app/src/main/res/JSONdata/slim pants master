@@ -1,0 +1,409 @@
+{
+  "_v" : "15.9",
+  "_type" : "product",
+  "currency" : "USD",
+  "id" : "22416787",
+  "image_groups" : [ {
+    "_type" : "image_group",
+    "images" : [ {
+      "_type" : "image",
+      "alt" : "Slim Pants, , large",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw3e4250ca/images/large/B0274208_ED5_0.jpg",
+      "title" : "Slim Pants, "
+    }, {
+      "_type" : "image",
+      "alt" : "Slim Pants, , large",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw63898346/images/large/B0274208_ED5_B0.jpg",
+      "title" : "Slim Pants, "
+    }, {
+      "_type" : "image",
+      "alt" : "Slim Pants, , large",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw4a445a11/images/large/B0274208_ED5_L1.jpg",
+      "title" : "Slim Pants, "
+    } ],
+    "view_type" : "large"
+  }, {
+    "_type" : "image_group",
+    "images" : [ {
+      "_type" : "image",
+      "alt" : "Slim Pants, Beige, large",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw3e4250ca/images/large/B0274208_ED5_0.jpg",
+      "title" : "Slim Pants, Beige"
+    }, {
+      "_type" : "image",
+      "alt" : "Slim Pants, Beige, large",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw63898346/images/large/B0274208_ED5_B0.jpg",
+      "title" : "Slim Pants, Beige"
+    }, {
+      "_type" : "image",
+      "alt" : "Slim Pants, Beige, large",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw4a445a11/images/large/B0274208_ED5_L1.jpg",
+      "title" : "Slim Pants, Beige"
+    } ],
+    "variation_value" : "ED5",
+    "view_type" : "large"
+  }, {
+    "_type" : "image_group",
+    "images" : [ {
+      "_type" : "image",
+      "alt" : "Slim Pants, , medium",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwdf7544ab/images/medium/B0274208_ED5_0.jpg",
+      "title" : "Slim Pants, "
+    }, {
+      "_type" : "image",
+      "alt" : "Slim Pants, , medium",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw50974aa7/images/medium/B0274208_ED5_B0.jpg",
+      "title" : "Slim Pants, "
+    }, {
+      "_type" : "image",
+      "alt" : "Slim Pants, , medium",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwd296ee57/images/medium/B0274208_ED5_L1.jpg",
+      "title" : "Slim Pants, "
+    } ],
+    "view_type" : "medium"
+  }, {
+    "_type" : "image_group",
+    "images" : [ {
+      "_type" : "image",
+      "alt" : "Slim Pants, Beige, medium",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwdf7544ab/images/medium/B0274208_ED5_0.jpg",
+      "title" : "Slim Pants, Beige"
+    }, {
+      "_type" : "image",
+      "alt" : "Slim Pants, Beige, medium",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw50974aa7/images/medium/B0274208_ED5_B0.jpg",
+      "title" : "Slim Pants, Beige"
+    }, {
+      "_type" : "image",
+      "alt" : "Slim Pants, Beige, medium",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwd296ee57/images/medium/B0274208_ED5_L1.jpg",
+      "title" : "Slim Pants, Beige"
+    } ],
+    "variation_value" : "ED5",
+    "view_type" : "medium"
+  }, {
+    "_type" : "image_group",
+    "images" : [ {
+      "_type" : "image",
+      "alt" : "Slim Pants, , small",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw0a992afa/images/small/B0274208_ED5_0.jpg",
+      "title" : "Slim Pants, "
+    }, {
+      "_type" : "image",
+      "alt" : "Slim Pants, , small",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw763f9f10/images/small/B0274208_ED5_B0.jpg",
+      "title" : "Slim Pants, "
+    }, {
+      "_type" : "image",
+      "alt" : "Slim Pants, , small",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwf446c291/images/small/B0274208_ED5_L1.jpg",
+      "title" : "Slim Pants, "
+    } ],
+    "view_type" : "small"
+  }, {
+    "_type" : "image_group",
+    "images" : [ {
+      "_type" : "image",
+      "alt" : "Slim Pants, Beige, small",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw0a992afa/images/small/B0274208_ED5_0.jpg",
+      "title" : "Slim Pants, Beige"
+    }, {
+      "_type" : "image",
+      "alt" : "Slim Pants, Beige, small",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dw763f9f10/images/small/B0274208_ED5_B0.jpg",
+      "title" : "Slim Pants, Beige"
+    }, {
+      "_type" : "image",
+      "alt" : "Slim Pants, Beige, small",
+      "link" : "https://dev03-instore-dw.demandware.net/on/demandware.static/-/Sites-apparel-catalog/default/dwf446c291/images/small/B0274208_ED5_L1.jpg",
+      "title" : "Slim Pants, Beige"
+    } ],
+    "variation_value" : "ED5",
+    "view_type" : "small"
+  } ],
+  "inventories" : [ {
+    "_type" : "inventory",
+    "id" : "undefined"
+  } ],
+  "inventory" : {
+    "_type" : "inventory",
+    "ats" : 99,
+    "backorderable" : false,
+    "id" : "inventory",
+    "orderable" : true,
+    "preorderable" : false,
+    "stock_level" : 99
+  },
+  "long_description" : "<ul>\n    <li>97% cotton, 3% elastane</li>\n    <li>flat front</li>\n    <li>front pockets and besom back pockets</li>                        <li>zip fly and covered hook and eye closure</li>\n<li>front rise 10 3/4 inches</li>\n<li>back rise 15 1/4 inches</li>\n<li>leg opening 15 inches</li>\n<li>inseam 33 inches</li>\n<li>measurements taken from a size 32</li>\n    <li>dry clean only</li></ul>",
+  "master" : {
+    "_type" : "master",
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/22416787?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "master_id" : "22416787",
+    "orderable" : true,
+    "price" : 175.00
+  },
+  "min_order_quantity" : 1,
+  "name" : "Slim Pants",
+  "page_description" : "These slim fit pants are the perfect base for spring dressing. Made in our washed cotton twill fabric.",
+  "page_title" : "Men's Slim Pants",
+  "price" : 175.00,
+  "primary_category_id" : "mens-clothing-pants",
+  "recommendations" : [ {
+    "_type" : "recommendation",
+    "recommendation_type" : {
+      "_type" : "recommendation_type",
+      "display_value" : "Product Detail Page - Cross Sell",
+      "value" : 1
+    },
+    "recommended_item_id" : "44736828",
+    "recommended_item_link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/44736828?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64"
+  }, {
+    "_type" : "recommendation",
+    "recommendation_type" : {
+      "_type" : "recommendation_type",
+      "display_value" : "Product Detail Page - Cross Sell",
+      "value" : 1
+    },
+    "recommended_item_id" : "73910532",
+    "recommended_item_link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/73910532?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64"
+  }, {
+    "_type" : "recommendation",
+    "recommendation_type" : {
+      "_type" : "recommendation_type",
+      "display_value" : "Product Detail Page - Cross Sell",
+      "value" : 1
+    },
+    "recommended_item_id" : "86736887",
+    "recommended_item_link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/86736887?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64"
+  }, {
+    "_type" : "recommendation",
+    "recommendation_type" : {
+      "_type" : "recommendation_type",
+      "display_value" : "Product Detail Page - Cross Sell",
+      "value" : 1
+    },
+    "recommended_item_id" : "73910432",
+    "recommended_item_link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/73910432?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64"
+  }, {
+    "_type" : "recommendation",
+    "recommendation_type" : {
+      "_type" : "recommendation_type",
+      "display_value" : "Product Detail Page - Cross Sell",
+      "value" : 1
+    },
+    "recommended_item_id" : "91736743",
+    "recommended_item_link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/91736743?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64"
+  }, {
+    "_type" : "recommendation",
+    "recommendation_type" : {
+      "_type" : "recommendation_type",
+      "display_value" : "Product Detail Page - Cross Sell",
+      "value" : 1
+    },
+    "recommended_item_id" : "12416789",
+    "recommended_item_link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/12416789?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64"
+  }, {
+    "_type" : "recommendation",
+    "recommendation_type" : {
+      "_type" : "recommendation_type",
+      "display_value" : "Product Detail Page - Cross Sell",
+      "value" : 1
+    },
+    "recommended_item_id" : "32416783",
+    "recommended_item_link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/32416783?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64"
+  }, {
+    "_type" : "recommendation",
+    "recommendation_type" : {
+      "_type" : "recommendation_type",
+      "display_value" : "Product Detail Page - Cross Sell",
+      "value" : 1
+    },
+    "recommended_item_id" : "42946931",
+    "recommended_item_link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/42946931?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64"
+  }, {
+    "_type" : "recommendation",
+    "recommendation_type" : {
+      "_type" : "recommendation_type",
+      "display_value" : "Product Detail Page - Cross Sell",
+      "value" : 1
+    },
+    "recommended_item_id" : "66936828",
+    "recommended_item_link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/66936828?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64"
+  } ],
+  "short_description" : "These slim fit pants are the perfect base for spring dressing. Made in our washed cotton twill fabric.",
+  "step_quantity" : 1,
+  "type" : {
+    "_type" : "product_type",
+    "master" : true
+  },
+  "variants" : [ {
+    "_type" : "variant",
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/883360520117?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "orderable" : true,
+    "price" : 175.00,
+    "product_id" : "883360520117",
+    "variation_values" : {
+      "color" : "ED5",
+      "size" : "32"
+    }
+  }, {
+    "_type" : "variant",
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/883360520100?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "orderable" : true,
+    "price" : 175.00,
+    "product_id" : "883360520100",
+    "variation_values" : {
+      "color" : "ED5",
+      "size" : "31"
+    }
+  }, {
+    "_type" : "variant",
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/883360520124?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "orderable" : true,
+    "price" : 175.00,
+    "product_id" : "883360520124",
+    "variation_values" : {
+      "color" : "ED5",
+      "size" : "33"
+    }
+  }, {
+    "_type" : "variant",
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/883360520094?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "orderable" : true,
+    "price" : 175.00,
+    "product_id" : "883360520094",
+    "variation_values" : {
+      "color" : "ED5",
+      "size" : "30"
+    }
+  }, {
+    "_type" : "variant",
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/883360520087?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "orderable" : true,
+    "price" : 175.00,
+    "product_id" : "883360520087",
+    "variation_values" : {
+      "color" : "ED5",
+      "size" : "29"
+    }
+  }, {
+    "_type" : "variant",
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/883360520162?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "orderable" : true,
+    "price" : 175.00,
+    "product_id" : "883360520162",
+    "variation_values" : {
+      "color" : "ED5",
+      "size" : "40"
+    }
+  }, {
+    "_type" : "variant",
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/883360520131?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "orderable" : true,
+    "price" : 175.00,
+    "product_id" : "883360520131",
+    "variation_values" : {
+      "color" : "ED5",
+      "size" : "34"
+    }
+  }, {
+    "_type" : "variant",
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/883360520070?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "orderable" : true,
+    "price" : 175.00,
+    "product_id" : "883360520070",
+    "variation_values" : {
+      "color" : "ED5",
+      "size" : "28"
+    }
+  }, {
+    "_type" : "variant",
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/883360520148?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "orderable" : true,
+    "price" : 175.00,
+    "product_id" : "883360520148",
+    "variation_values" : {
+      "color" : "ED5",
+      "size" : "36"
+    }
+  }, {
+    "_type" : "variant",
+    "link" : "https://dev03.instore.dw.demandware.net/s/SiteGenesis/dw/shop/v15_9/products/883360520155?locale=default&inventory_ids=undefined&client_id=8d66a325-89ff-462e-8416-89dd49196c64",
+    "orderable" : true,
+    "price" : 175.00,
+    "product_id" : "883360520155",
+    "variation_values" : {
+      "color" : "ED5",
+      "size" : "38"
+    }
+  } ],
+  "variation_attributes" : [ {
+    "_type" : "variation_attribute",
+    "id" : "color",
+    "name" : "Color",
+    "values" : [ {
+      "_type" : "variation_attribute_value",
+      "name" : "Beige",
+      "orderable" : true,
+      "value" : "ED5"
+    } ]
+  }, {
+    "_type" : "variation_attribute",
+    "id" : "size",
+    "name" : "Size",
+    "values" : [ {
+      "_type" : "variation_attribute_value",
+      "name" : "28",
+      "orderable" : true,
+      "value" : "28"
+    }, {
+      "_type" : "variation_attribute_value",
+      "name" : "29",
+      "orderable" : true,
+      "value" : "29"
+    }, {
+      "_type" : "variation_attribute_value",
+      "name" : "30",
+      "orderable" : true,
+      "value" : "30"
+    }, {
+      "_type" : "variation_attribute_value",
+      "name" : "31",
+      "orderable" : true,
+      "value" : "31"
+    }, {
+      "_type" : "variation_attribute_value",
+      "name" : "32",
+      "orderable" : true,
+      "value" : "32"
+    }, {
+      "_type" : "variation_attribute_value",
+      "name" : "33",
+      "orderable" : true,
+      "value" : "33"
+    }, {
+      "_type" : "variation_attribute_value",
+      "name" : "34",
+      "orderable" : true,
+      "value" : "34"
+    }, {
+      "_type" : "variation_attribute_value",
+      "name" : "36",
+      "orderable" : true,
+      "value" : "36"
+    }, {
+      "_type" : "variation_attribute_value",
+      "name" : "38",
+      "orderable" : true,
+      "value" : "38"
+    }, {
+      "_type" : "variation_attribute_value",
+      "name" : "40",
+      "orderable" : true,
+      "value" : "40"
+    } ]
+  } ],
+  "c_isNew" : true,
+  "c_isNewtest" : true,
+  "c_isSale" : true
+}

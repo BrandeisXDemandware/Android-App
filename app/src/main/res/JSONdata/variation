@@ -1,0 +1,42 @@
+{
+  "_v" : "15.9",
+  "_type" : "product",
+  "currency" : "USD",
+  "id" : "883360520100",
+  "inventories" : [ {
+    "_type" : "inventory",
+    "id" : "undefined"
+  } ],
+  "inventory" : {
+    "_type" : "inventory",
+    "ats" : 99,
+    "backorderable" : false,
+    "id" : "inventory",
+    "orderable" : true,
+    "preorderable" : false,
+    "stock_level" : 99
+  },
+  "long_description" : "<ul>\n    <li>97% cotton, 3% elastane</li>\n    <li>flat front</li>\n    <li>front pockets and besom back pockets</li>                        <li>zip fly and covered hook and eye closure</li>\n<li>front rise 10 3/4 inches</li>\n<li>back rise 15 1/4 inches</li>\n<li>leg opening 15 inches</li>\n<li>inseam 33 inches</li>\n<li>measurements taken from a size 32</li>\n    <li>dry clean only</li></ul>",
+  "min_order_quantity" : 1,
+  "name" : "Slim Pants",
+  "page_description" : "These slim fit pants are the perfect base for spring dressing. Made in our washed cotton twill fabric.",
+  "page_title" : "Men's Slim Pants",
+  "price" : 175.00,
+  "prices" : {
+    "usd-list-prices" : 175.00
+  },
+  "short_description" : "These slim fit pants are the perfect base for spring dressing. Made in our washed cotton twill fabric.",
+  "step_quantity" : 1,
+  "type" : {
+    "_type" : "product_type",
+    "variant" : true
+  },
+  "c_availableForInStorePickup" : true,
+  "c_color" : "ED5",
+  "c_isNew" : true,
+  "c_isNewtest" : true,
+  "c_isSale" : true,
+  "c_refinementColor" : "beige",
+  "c_size" : "31",
+  "c_styleNumber" : "B0274208"
+}

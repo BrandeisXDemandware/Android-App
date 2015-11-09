@@ -1,0 +1,84 @@
+{
+  "_v":"15.9",
+  "_type":"order",
+  "creation_date":"2014-06-15T04:02Z",
+  "customer_info":{
+    "email":"somebody@example.com"
+  },
+  "currency":"USD",
+  "order_no":"1234567890",
+  "order_price_adjustments":[{
+    "promotion_id": "10$ off",
+    "promotion_link": "https://example.com/dw/shop/v15_9/promotions/10_bugs_off",
+    "item_text": "10$ off",
+    "price": -10.00
+  }],
+  "order_token":"8dewokhrqwcdkjs83-46sjfdnbswr982nf63ks0sm-fnk23y6",
+  "order_total":101.00,
+  "payment_instruments" : [
+  {
+    "payment_instrument_id" : "ce6QR9aaabmakaaadf1KdLcXoH",
+    "etag" : "4d48d1ec18cd88c046f889ff3da6ce7915554a88493d597de59cda31b49707d8",
+    "payment_method_id" : "CREDIT_CARD.Visa",
+    "payment_card" : 
+    {
+      "card_type" : "Visa",
+      "expiration_month" : 12,
+      "expiration_year" : 2018,
+      "holder" : "Jeff Lebowski",
+      "masked_number" : "************1111",
+    },
+    "amount" : 0.00
+  }],
+  "product_items":[{
+    "product_id":"123",
+    "item_text": "Product foo",
+    "quantity":2.00,
+    "product_name":"foo",
+    "base_price":30.00,
+    "price":60.00
+  },
+  {
+    "product_id":"456",
+    "item_text": "Product foo",
+    "quantity":1.00,
+    "product_name":"bar",
+    "base_price":40.00,
+    "price":40.00,
+    "price_adjustments":[{
+      "promotion_id": "10% off",
+      "promotion_link": "https://example.com/dw/shop/v15_9/promotions/10_percent_off",
+      "item_text": "10% off",
+      "price": -4.00
+    }]
+  }],
+  "product_sub_total":96.00,
+  "product_total":86.00,
+  "shipping_total":5.00,  
+  "shipments":[{
+    "id":"default",
+    "shipping_address":{
+      "salutation":"",
+      "title":"",
+      "company_name":"",
+      "first_name":"",
+      "second_name":"",
+      "last_name":"",
+      "postal_code":"",
+      "address1":"",
+      "address2":"",
+      "city":"",
+      "post_box":"",
+      "country_code":"",
+      "state_code":"",
+      "phone":"",
+      "suffix":""
+    },
+    "shipping_method":{
+      "id":"001",
+      "name":"Ground",
+      "description":"Order received within 7-10 business days"
+    }}],
+  "status":"created",
+  "tax_total":9.10
+}
